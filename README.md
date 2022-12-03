@@ -2,7 +2,7 @@
 
 Advent of Code is an Advent calendar of small programming puzzles for a variety of skill sets and skill levels that can be solved in any programming language you like. 
 
-All images generateD with AI, by me, on https://nightcafe.studio/. 
+All images generated with AI, by me, on https://nightcafe.studio/. 
 
 [Day 1 - some elves wanted me to be Excel](https://github.com/jai-jalah/adventofcode-2022/tree/main/day-1) <br>
 ![Elves using Microsoft Excel](https://github.com/jai-jalah/adventofcode-2022/blob/main/day-1/day-1-icon.jpg) <br>
