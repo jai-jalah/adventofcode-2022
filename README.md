@@ -6,4 +6,4 @@
 [Day 2 - I HATE Rock, Papers & Scissors](https://github.com/jai-jalah/adventofcode-2022/tree/main/day-2)<br>
 ![lots of christmas elves, fighting, big swords - they are playing rock paper scissors](https://github.com/jai-jalah/adventofcode-2022/blob/main/day-2/day-2-icon.jpg)
 <br>
-[Day 3 - Incredibly disorganized elves, in need of better management]((https://github.com/jai-jalah/adventofcode-2022/tree/main/day-3))
+[Day 3 - Incredibly disorganized elves, in need of better management](https://github.com/jai-jalah/adventofcode-2022/tree/main/day-3)
