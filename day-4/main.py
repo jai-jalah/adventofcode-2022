@@ -1,3 +1,14 @@
+def splitter(assignment_pair):
+    split_pairs = assignment_pair.split(",")
+    pair_1, pair_2 = (pair.split("-") for pair in split_pairs)
+  
+    pair_1_sanitised = [eval(num) for num in pair_1]
+    pair_2_sanitised = [eval(num) for num in pair_2]  # Converting strings to ints.
+  
+    return pair_1_sanitised, pair_2_sanitised
+
+assignment_pairs = open("input.txt").read().splitlines()
+
 '''
 Part 1 steps
 
@@ -11,17 +22,6 @@ Part 1 steps
     
 # 2. if true, add +1 to fully_contained_count. Answer is the total count at the end.
 '''
-def splitter(assignment_pair):
-    split_pairs = assignment_pair.split(",")
-    pair_1, pair_2 = (pair.split("-") for pair in split_pairs)
-  
-    pair_1_sanitised = [eval(num) for num in pair_1]
-    pair_2_sanitised = [eval(num) for num in pair_2]  # Converting strings to ints.
-  
-    return pair_1_sanitised, pair_2_sanitised
-
-assignment_pairs = open("input.txt").read().splitlines()
-  
 part_1_answer = 0
 
 for assignment_pair in assignment_pairs:
@@ -33,6 +33,7 @@ for assignment_pair in assignment_pairs:
       part_1_answer += 1
 
 print(f"Part 1 Answer: {part_1_answer}")
+
 '''
 Part 2 steps
 
