@@ -4,9 +4,9 @@ def splitter(assignment_pair):
   
     pair_1_sanitised = [eval(num) for num in pair_1]
     pair_2_sanitised = [eval(num) for num in pair_2]  # Converting strings to ints.
-  
-    return pair_1_sanitised, pair_2_sanitised
 
+    return pair_1_sanitised, pair_2_sanitised
+    
 assignment_pairs = open("input.txt").read().splitlines()
 
 '''
@@ -42,14 +42,14 @@ Part 2 steps
 part_2_answer = 0
 
 for assignment_pair in assignment_pairs:
-  pair_1, pair_2 = splitter(assignment_pair)
-  
-  range_overlap = range(
-    max(pair_1[0], pair_2[0]),
-    min(pair_1[-1], pair_2[-1]) + 1
-  )  # Found this on stack overflow lol https://stackoverflow.com/questions/6821156/how-to-find-range-overlap-in-python
+    pair_1, pair_2 = splitter(assignment_pair)
+    
+    range_overlap = range(
+        max(pair_1[0], pair_2[0]),
+        min(pair_1[-1], pair_2[-1]) + 1
+    )  # Found this on stack overflow lol https://stackoverflow.com/questions/6821156/how-to-find-range-overlap-in-python
 
-  if len(range_overlap):  # will be empty list if no overlap, so here we're just checking for any overlap.
-    part_2_answer += 1
+    if len(range_overlap):  # will be empty list if no overlap, so here we're just checking for any overlap.
+        part_2_answer += 1
 
 print(f"Part 2 Answer: {part_2_answer}")
