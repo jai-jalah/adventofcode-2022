@@ -8,6 +8,9 @@ Part 1 steps
 5. add priority to answer/total. 
 '''
 
+ORD_BASER_LOWER_CHARS = 96 
+ORD_BASER_UPPER_CHARS = 70 # Subtracting 96 gets the ord number down to 1 as starting point (i.e. a = 1), - 70 gets it down to 26 (i.e. A = 27). Char needs to be converted to lowercase first for this calculation to work.
+
 part_1_answer = 0
 
 with open("input.txt", "r") as box_of_rucksacks:
@@ -22,7 +25,7 @@ for rucksack in rucksacks:
     
     duplicate_char = [char for char in rucksack_first_compartment_sanitised if char in rucksack_second_compartment_sanitised][0]
     
-    duplicate_char_priority = ord(duplicate_char.lower()) - 96 if (duplicate_char).islower() else ord(duplicate_char.lower()) - 70 # - 96 gets the ord number down to 1 as starting point (i.e. a = 1), - 70 gets it down to 26 (i.e. A = 27)
+    duplicate_char_priority = ord(duplicate_char.lower()) - ORD_BASER_LOWER_CHARS if (duplicate_char).islower() else ord(duplicate_char.lower()) - ORD_BASER_UPPER_CHARS
    
     part_1_answer = part_1_answer + duplicate_char_priority
 
@@ -46,11 +49,11 @@ for rucksack in range(0, len(rucksacks), 3):
  
     first_rucksack_sanitised = ''.join(sorted(set(first_rucksack), key=first_rucksack.index)) 
     second_rucksack_sanitised = ''.join(sorted(set(second_rucksack), key=second_rucksack.index)) 
-    third_rucksack_sanitised = ''.join(sorted(set(third_rucksack), key=third_rucksack.index)) # Maintaining the order of string this time around, as keep getting a rogue newline char along with the actual duplicate char and cannot be bothered to figure out how to remove it.
+    third_rucksack_sanitised = ''.join(sorted(set(third_rucksack), key=third_rucksack.index)) # Maintaining the order of string this time around, as keep getting a rogue newline char along with the actual duplicate char, and cannot be bothered to figure out how to remove it.
     
     duplicate_char = [char for char in first_rucksack_sanitised if char in second_rucksack_sanitised and char in third_rucksack_sanitised][0]
     
-    duplicate_char_priority = ord(duplicate_char.lower()) - 96 if (duplicate_char).islower() else ord(duplicate_char.lower()) - 70 # - 96 gets the ord number down to 1 as starting point (i.e. a = 1), - 70 gets it down to 26 (i.e. A = 27)
+    duplicate_char_priority = ord(duplicate_char.lower()) - ORD_BASER_LOWER_CHARS if (duplicate_char).islower() else ord(duplicate_char.lower()) - ORD_BASER_UPPER_CHARS
    
     part_2_answer = part_2_answer + duplicate_char_priority
 
