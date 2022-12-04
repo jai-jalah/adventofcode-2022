@@ -6,7 +6,7 @@ def splitter(assignment_pair):
     pair_2_sanitised = [eval(num) for num in pair_2]  # Converting strings to ints.
 
     return pair_1_sanitised, pair_2_sanitised
-    
+
 assignment_pairs = open("input.txt").read().splitlines()
 
 '''
@@ -28,9 +28,9 @@ for assignment_pair in assignment_pairs:
     pair_1, pair_2 = splitter(assignment_pair)
   
     if pair_1[0] >= pair_2[0] and pair_1[1] <= pair_2[1]:
-      part_1_answer += 1
+        part_1_answer += 1
     elif pair_2[0] >= pair_1[0] and pair_2[1] <= pair_1[1]:
-      part_1_answer += 1
+        part_1_answer += 1
 
 print(f"Part 1 Answer: {part_1_answer}")
 
