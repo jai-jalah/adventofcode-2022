@@ -23,9 +23,9 @@ for assignment_pair in assignment_pairs:
     pair_2_sanitised = [eval(num) for num in pair_2] # Converting strings to ints.
   
     if pair_1_sanitised[0] >= pair_2_sanitised[0] and pair_1_sanitised[1] <= pair_2_sanitised[1]:
-        part_1_answer = part_1_answer + 1 
+        part_1_answer += 1
     elif pair_2_sanitised[0] >= pair_1_sanitised[0] and pair_2_sanitised[1] <= pair_1_sanitised[1]:
-        part_1_answer = part_1_answer + 1
+        part_1_answer += 1
 
 print(f"Part 1 Answer: {part_1_answer}")
 
