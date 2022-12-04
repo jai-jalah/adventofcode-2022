@@ -8,13 +8,13 @@ Part 1 steps
 5. add priority to answer/total. 
 '''
 
+with open("input.txt", "r") as box_of_rucksacks:
+    rucksacks = box_of_rucksacks.readlines()
+
 ORD_BASER_LOWER_CHARS = 96 
 ORD_BASER_UPPER_CHARS = 70 # Subtracting 96 gets the ord number down to 1 as starting point (i.e. a = 1), - 70 gets it down to 26 (i.e. A = 27). Char needs to be converted to lowercase first for this calculation to work.
 
 part_1_answer = 0
-
-with open("input.txt", "r") as box_of_rucksacks:
-    rucksacks = box_of_rucksacks.readlines()
 
 for rucksack in rucksacks:
     rucksack_first_compartment  = rucksack[:len(rucksack)//2]
@@ -40,9 +40,6 @@ Part 2 steps
 4. Answer = total of common chars altogether.
 '''  
 part_2_answer = 0
-
-with open("input.txt", "r") as box_of_rucksacks:
-    rucksacks = box_of_rucksacks.readlines()
 
 for rucksack in range(0, len(rucksacks), 3):
     first_rucksack, second_rucksack, third_rucksack = rucksacks[rucksack:rucksack+3] # Partitions the rucksack list into groups of 3 elements.
