@@ -16,3 +16,5 @@ Prompt(s) used: lots of christmas elves, fighting, big swords, rock paper scisso
 ![christmas elves, hiking with rucksacks](https://github.com/jai-jalah/adventofcode-2022/blob/main/day-3/day-3-icon.jpg) <br>
 Prompt(s) used: christmas elves, hiding presents in rucksacks
 <br><br>
+[Day 4 - Seriously, someone please provide these elves with training](https://github.com/jai-jalah/adventofcode-2022/tree/main/day-4)<br>
+<br><br>
