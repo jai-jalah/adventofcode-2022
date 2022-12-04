@@ -16,8 +16,7 @@ def splitter(assignment_pair):
     pair_1, pair_2 = (pair.split("-") for pair in split_pairs)
   
     pair_1_sanitised = [eval(num) for num in pair_1]
-    pair_2_sanitised = [eval(num)
-                        for num in pair_2]  # Converting strings to ints.
+    pair_2_sanitised = [eval(num) for num in pair_2]  # Converting strings to ints.
   
     return pair_1_sanitised, pair_2_sanitised
 
@@ -28,11 +27,9 @@ part_1_answer = 0
 for assignment_pair in assignment_pairs:
     pair_1, pair_2 = splitter(assignment_pair)
   
-    if pair_1[0] >= pair_2[0] and pair_1[
-        1] <= pair_2[1]:
+    if pair_1[0] >= pair_2[0] and pair_1[1] <= pair_2[1]:
       part_1_answer += 1
-    elif pair_2[0] >= pair_1[0] and pair_2[
-        1] <= pair_1[1]:
+    elif pair_2[0] >= pair_1[0] and pair_2[1] <= pair_1[1]:
       part_1_answer += 1
 
 print(f"Part 1 Answer: {part_1_answer}")
@@ -51,9 +48,7 @@ for assignment_pair in assignment_pairs:
     min(pair_1[-1], pair_2[-1]) + 1
   )  # Found this on stack overflow lol https://stackoverflow.com/questions/6821156/how-to-find-range-overlap-in-python
 
-  if len(
-      range_overlap
-  ):  # will be empty list if no overlap, so here we're just checking for any overlap.
+  if len(range_overlap):  # will be empty list if no overlap, so here we're just checking for any overlap.
     part_2_answer += 1
 
 print(f"Part 2 Answer: {part_2_answer}")
