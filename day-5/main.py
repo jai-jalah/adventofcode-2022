@@ -57,8 +57,7 @@ for step in rearrangment_steps:
 final_crate_values = list(crate_arrangements.values())
 answer_list = list()
 
-for nested_list in final_crate_values:
-    answer_list.append(nested_list[-1:])
+[answer_list.append(nested_list[-1:]) for nested_list in final_crate_values]
 
 answer = ('').join(flatten(answer_list)) # Flatten one final time and stringify.
 print(answer) # Turn off line 50 / crate_to_append.reverse() for part_2_answer.
