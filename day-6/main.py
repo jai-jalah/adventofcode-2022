@@ -13,7 +13,6 @@ Part 2 steps
 
 datastream = open("input.txt").read()
 
-
 # Got this algo on Stack Overflow: https://stackoverflow.com/questions/17357370/implementing-an-algorithm-to-determine-if-a-string-has-all-unique-characters
 def unique(string):
   unique_chars = set()
@@ -22,7 +21,6 @@ def unique(string):
       return False
     unique_chars.add(char)
   return True
-
 
 marker_length = 14  # Make this 4 for part_1_answer, or 14 for part_2_answer.
 index = 0
