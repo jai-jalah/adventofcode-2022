@@ -1,9 +1,9 @@
 '''
 Part 1 Steps
 
-# 1. Start at index of 0 / first char, iterate over input in chunks of 4 with index char as starting char i.e. bvwbjplbgvbhsrlpgdmjqwftvncz - bvwb, vwbj, etc.
+# 1. Start at index of 0 // first char, iterate over input in chunks of 4 with index char as starting char i.e. bvwbjplbgvbhsrlpgdmjqwftvncz - bvwb, vwbj, etc.
 # 2. If all chars in chunk are uniq, then this is our start-of-packet marker.
-# 3. Get position / index + 1 of final char in start-of-packet market in the total string i.e. 
+# 3. Get position // index + 1 of final char in start-of-packet marker in the total string i.e. 
     bvwbjplbgvbhsrlpgdmjqwftvncz - final chunk is vwbj, so answer is 5.
 
 Part 2 steps
