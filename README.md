@@ -18,5 +18,7 @@ Prompt(s) used: christmas elves, hiding presents in rucksacks
 <br><br>
 [Day 4 - Seriously, someone please provide these elves with training](https://github.com/jai-jalah/adventofcode-2022/tree/main/day-4)<br>
 <br><br>
-[Day 5 - These elves are crate certified](https://github.com/jai-jalah/adventofcode-2022/tree/main/day-5)<br>
+[Day 5 - These elves are forklift certified](https://github.com/jai-jalah/adventofcode-2022/tree/main/day-5)<br>
+<br><br>
+[Day 6 - They've moved onto military grade technology](https://github.com/jai-jalah/adventofcode-2022/tree/main/day-6)<br>
 <br><br>
