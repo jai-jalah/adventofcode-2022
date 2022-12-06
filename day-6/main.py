@@ -11,26 +11,26 @@ Part 2 steps
 # 1. Increase marker length to 14.
 '''
 
-datastream = open("input.txt").read()
-
 # Got this algo on Stack Overflow: https://stackoverflow.com/questions/17357370/implementing-an-algorithm-to-determine-if-a-string-has-all-unique-characters
 def unique(string):
-  unique_chars = set()
-  for char in string:
-    if char in unique_chars:
-      return False
-    unique_chars.add(char)
-  return True
+    unique_chars = set()
+    for char in string:
+        if char in unique_chars:
+            return False
+        unique_chars.add(char)
+    return True
+
+datastream = open("./input.txt").read()
 
 marker_length = 14  # Make this 4 for part_1_answer, or 14 for part_2_answer.
 index = 0
 
 for char in datastream:
-  packet = datastream[index:marker_length]
+    packet = datastream[index:marker_length]
 
-  if unique(packet):
-    print(f"Answer: {marker_length}")
-    break
-  else:
-    index += 1
-    marker_length += 1
+    if unique(packet):
+        print(f"Answer: {marker_length}")
+        break
+    else:
+        index += 1
+        marker_length += 1
