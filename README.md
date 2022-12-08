@@ -22,3 +22,5 @@ Prompt(s) used: christmas elves, hiding presents in rucksacks
 <br><br>
 [Day 6 - They've moved onto military grade technology](https://github.com/jai-jalah/adventofcode-2022/tree/main/day-6)<br>
 <br><br>
+[Day 8 - I do love a good treehouse](https://github.com/jai-jalah/adventofcode-2022/tree/main/day-8)<br>
+<br><br>
